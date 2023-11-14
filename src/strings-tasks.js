@@ -518,7 +518,6 @@ function encodeToRot13(str) {
     if (index >= 13 && index < 26) res += code[(index + 13) % 13];
     if (index >= 26 && index < 39) res += code[index + 13];
     if (index >= 39) {
-      console.log(((index + 13) % 13) + 26);
       res += code[((index + 13) % 13) + 26];
     }
     if (index < 0) res += str[i];
